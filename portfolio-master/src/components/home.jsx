@@ -4,7 +4,7 @@ function Home() {
     const [commits, setCommits] = useState([]);
 
     useEffect(() => {
-        fetch("https://api.github.com/repos/LouieMRD/portfolio/commits")
+        fetch("https://api.github.com/repos/LouieMRD/portfolio-remaster/commits")
             .then((response) => response.json())
             .then((data) => {
                 if (Array.isArray(data)) {
