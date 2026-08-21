@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import Header from "./components/header.jsx";
 import Home from "./components/home.jsx";
 import Projects from "./components/Projects";
@@ -18,6 +19,7 @@ function App() {
 
                 <Contact />
 
+                <Analytics />
 
             </div>
         </>
