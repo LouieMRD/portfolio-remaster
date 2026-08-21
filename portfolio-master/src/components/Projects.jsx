@@ -30,13 +30,20 @@ const caseStudies = [
             {
                 src: "/images/case-studies/film-watchlist.png",
                 alt: "Final watchlist interface using a visual poster grid",
-                caption: "Recognition-focused watchlist",
+                caption: "Personalised watchlist",
             },
         ],
         challenge:
-            "Film websites contain a lot of information, but the community discussion can be difficult to navigate. I wanted to make searching, reviewing and interacting with other viewers feel like one connected journey rather than a collection of separate features.",
+            "Film websites contain a lot of information, but the community discussion can be " +
+            "difficult to navigate, often finding itself migrating to other social networks. " +
+            "not focused on Film. " + "I wanted to make a centralised hub of film discussion where" +
+            "users can rate, review, and engage in critical conversation about the films they love (or hate).",
         approach:
-            "I compared IMDb and Rotten Tomatoes, created user profiles for casual viewers, active community members and moderators, mapped access-specific navigation, then developed the interface in Figma. I reviewed it against Nielsen’s usability heuristics before testing key tasks with users.",
+            "I compared IMDb and Rotten Tomatoes to find core" +
+            "features that film review platforms offer, but also looked at other social media platforms such as" +
+            "X (formerly Twitter) where user discussions are placed at the forefront. This formed the core feature-set " +
+            "of the website. I then developed the UI and tested by prompting the testers to perform or engage with the core " +
+            "features.",
         stats: [
             { value: "3", label: "test participants" },
             { value: "19", label: "task prompts" },
@@ -57,7 +64,10 @@ const caseStudies = [
             },
         ],
         outcome:
-            "The final application combined authentication, film search, reviews, ratings, comments, likes, follows, watchlists and moderation. Building the product as well as designing it taught me to involve technical constraints earlier and prioritise a coherent core journey.",
+            "The final application combined authentication, film search, reviews, ratings, comments," +
+            " likes, follows, watchlists and moderation. Building the product, as well as designing," +
+            "  taught me to involve technical constraints earlier and prioritise a coherent " +
+            "core journey.",
     },
     {
         id: "feline-adoption",
@@ -91,30 +101,111 @@ const caseStudies = [
             },
         ],
         challenge:
-            "The app needed breed, gender, age, region and distance filters without overwhelming a small screen. New account and fosterer journeys also had to feel consistent with an interface and codebase I had not originally created.",
+            "The app needed breed, gender, age, region and distance filters " +
+            "without overwhelming a small mobile screen. The UI also had to stay consistant through" +
+            "different screens while working with new technologies. ",
         approach:
-            "I grouped filtering controls above a reusable grid of cat cards, kept detail screens visually focused and used shared navigation and form components. ViewModels held UI state while Room modelled cats and fosterers separately, reducing duplication and keeping screen logic clearer.",
+            "I grouped filtering controls above a reusable grid of cat cards, kept detail screens " +
+            "visually focused and used shared navigation and form components. ViewModels held " +
+            "UI state while Room modelled cats and fosterers separately, reducing duplication " +
+            "and keeping screen logic clearer.",
         stats: [
-            { value: "5", label: "filter dimensions" },
+            { value: "5", label: "filter options" },
             { value: "3", label: "core browse screens" },
             { value: "1", label: "shared UI language" },
         ],
         findings: [
             {
                 title: "Separate dense information",
-                text: "Keeping controls and cat cards in clearly defined areas prevented the results screen from becoming visually cluttered.",
+                text: "Keeping controls and cat cards in clearly defined areas " +
+                    "to prevent result screens from being visually cluttered.",
             },
             {
-                title: "Design with navigation state",
-                text: "Account screens moved to a clear back action when combined navigation patterns created unreliable routes.",
+                title: "User focused design",
+                text: "Making the design user focused allowed for easiernavigation and user flow",
             },
             {
                 title: "Document incomplete work",
-                text: "Manual testing showed that distance controls appeared correctly but did not filter reliably, so I recorded it as an unresolved feature rather than presenting it as complete.",
+                text: "Use-case testing showed that distance controls appeared correctly " +
+                    "but did not filter reliably, so I recorded it as an unresolved" +
+                    " feature rather than presenting it as complete.",
             },
         ],
         outcome:
-            "The delivered app supported browsing, cat and fosterer details, multi-criteria search, account flows and local persistence. The project strengthened my ability to extend an unfamiliar product and showed why interface patterns and navigation architecture should be planned together.",
+            "The delivered app supported browsing, cat and fosterer details, " +
+            "multi-criteria search, account flows and local persistence (as was permitted by the brief)" +
+            ". The project " +
+            "strengthened my ability to extend an unfamiliar code-base and showed why " +
+            "interface patterns and navigation architecture should be planned together.",
+    },
+
+    {
+        id: "card-game",
+        title: "Card Game",
+        kicker: "Group Work · Database Backed",
+        summary:
+            "An online card game that used save states to return to game layouts, account functionality, and deck customisation.",
+        role: "Repository maintainer, researcher and coder",
+        context: "Second-year university project",
+        technologies: ["PHP", "PostgreSQL", "JavaScript", "AJAX"],
+        images: [
+            {
+                src: "/images/case-studies/card-field.png",
+                alt: "Card game being played",
+                caption: "Playing field for the cards",
+            },
+            {
+                src: "/images/case-studies/card-settings.png",
+                alt: "...",
+                caption: "Settings menu",
+            },
+            {
+                src: "/images/case-studies/card-options.png",
+                alt: "...",
+                caption: "",
+            },
+
+        ],
+        challenge:
+            "The website had a brief outlining the core features required, as well as requiring " +
+            "extensive documentation covering our research, design decisions (and their " +
+            "justifications), and testing. We worked in a group of eight, so therefore had to " +
+            "divide responsibilities effectively, communicate regularly, and coordinate " +
+            "our work to ensure that every part of the project was completed on time.",
+        approach:
+            "We split the group into sub-groups, those who were more comfortable coding and those" +
+            " who wanted to focus on the documentation and testing. We had two weekly meetings, and an " +
+            "active group server chat, to discuss timelines, assign tasks, and assist one another in more" +
+            " complex tasks. ",
+        stats: [
+            { value: "22", label: "User-requirements completed" },
+            { value: "75%", label: "Module Mark" },
+            { value: "2,414", label: "Lines of code written" },
+        ],
+        findings: [
+            {
+                title: "Clear Controls",
+                text: "With so many controls such as deck shuffling, card rotation, and so one, " +
+                    "providing information on how to perform these tasks is essential.",
+            },
+            {
+                title: "Team Coordination",
+                text: "To complete a project of this scale, we needed to make sure people always had a clear " +
+                    "understanding of what was needed from them, and that they always had a task to complete.",
+            },
+            {
+                title: "Make saved layouts reliable",
+                text: "Saved layouts could contain a different number of cards from the" +
+                    " active deck. The loading system therefore needed to handle mismatches " +
+                    "safely without disrupting the game.",
+            },
+        ],
+        outcome:
+            "The completed application fulfilled 22 user requirements and provided a " +
+            "customisable card-game experience with account functionality, persistent " +
+            "preferences and reusable saved layouts. The project received a mark of 75% and " +
+            "strengthened my experience in repository maintenance, collaborative development," +
+            " testing and coordinating work across a team of eight.",
     },
 ];
 
@@ -127,7 +218,7 @@ const otherProjects = [
         url: "https://github.com/LouieMRD/portfolio",
     },
     {
-        title: "Database-Backed Card Game",
+        title: "",
         description:
             "A team-built browser card game with user accounts, sessions and saved layouts that let players return to previous game states.",
         technologies: ["JavaScript", "jQuery", "PHP", "PostgreSQL"],
