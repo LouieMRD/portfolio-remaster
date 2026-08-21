@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next"
 import Header from "./components/header.jsx";
 import Home from "./components/home.jsx";
 import Projects from "./components/Projects";
