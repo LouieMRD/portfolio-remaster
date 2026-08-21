@@ -39,7 +39,7 @@ function Contact() {
                 <h2>Contact Me</h2>
 
                 <p>
-                    If you have a question don't hesitate to send an email!
+                    If you have a question or just want to talk, don't hesitate to send an email!
                 </p>
 
                 <form className="contact-form" onSubmit={handleSubmit}>

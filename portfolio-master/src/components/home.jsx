@@ -42,7 +42,7 @@ function Home() {
 
                 <div className="intro_buttons">
                     <a href="#projects" className="btn btn-primary-proj animated-project-btn">
-                        <span className="btn-text">Case Studies</span>
+                        <span className="btn-text">Projects</span>
 
                         <span className="material-symbols-outlined project_icon">
                             folder_open
