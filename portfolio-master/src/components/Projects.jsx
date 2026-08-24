@@ -256,11 +256,11 @@ function Projects() {
         <section className="projects-section" id="projects">
             <header className="projects-header">
                 <p className="section-kicker">Selected work</p>
-                <h2>Product Design &amp; UI Work</h2>
+                <h2>Case Studies &amp; UI Work</h2>
                 <p>
                     Projects showing how I move from user needs and early interface ideas to
-                    tested, working products. Open either case study for the decisions behind
-                    the final screens.
+                    tested, working products. Open the case study for the decisions behind
+                    the designs and development decisions.
                 </p>
             </header>
 
