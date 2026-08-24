@@ -218,10 +218,12 @@ const otherProjects = [
         url: "https://github.com/LouieMRD/portfolio",
     },
     {
-        title: "",
+        title: "Blender Animation",
         description:
-            "A team-built browser card game with user accounts, sessions and saved layouts that let players return to previous game states.",
-        technologies: ["JavaScript", "jQuery", "PHP", "PostgreSQL"],
+            "A fun animation made in Blender about someone having a bad day, made for a University" +
+            " module that required the video to have a certain number of numerous transition types.",
+        technologies: ["Blender", "Blender Animation", "Blender Video-editor"],
+        url: "https://youtu.be/4psKkB5ZIh4",
     },
     {
         title: "Yellow Car Detection",
@@ -413,7 +415,7 @@ function Projects() {
 
                         {project.url && (
                             <a className="project-link" href={project.url} target="_blank" rel="noreferrer">
-                                View on GitHub <span aria-hidden="true">↗</span>
+                                View <span aria-hidden="true">↗</span>
                             </a>
                         )}
                     </article>
